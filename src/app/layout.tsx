@@ -3,6 +3,7 @@ import { Space_Grotesk } from 'next/font/google';
 import './globals.css';
 import { cn } from '@/lib/utils';
 import { Container } from '@/components/shared/Container';
+import { Header } from '@/components/shared/Header';
 
 const grotesk = Space_Grotesk({
     weight: ['400', '500'],
@@ -23,7 +24,7 @@ export default function RootLayout({
         <html lang="en">
             <body className={grotesk.className}>
                 <Container>
-                    <header className={cn('test', 'tees3')}>Header</header>
+                    <Header />
                     {children}
                     <footer>Footer</footer>
                 </Container>
