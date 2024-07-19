@@ -19,7 +19,13 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className={grotesk.className}>{children}</body>
+            <body className={grotesk.className}>
+                <div className="container mx-auto">
+                    <header>Header</header>
+                    {children}
+                    <footer>Footer</footer>
+                </div>
+            </body>
         </html>
     );
 }
